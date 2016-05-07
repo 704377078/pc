@@ -1,0 +1,20 @@
+<div ng-controller="menu1.ctrl">
+    <h3>学生列表</h3>
+    <table>
+        <tr>
+            <th>学生姓名</th>
+            <th>学生学号</th>
+            <th>成绩</th>
+            <th>操作</th>
+        </tr>
+        <tr ng-repeat="student in studentList">
+            <td>{{student.name}}</td>
+            <td>{{student.id}}</td>
+            <td>{{student.score}}</td>
+            <td>
+                <a href="javascript:void(0)" ng-click="showStudent(student,$index)">编辑</a>
+                <a href="javascript:void(0)" ng-click="delStudent($index)">删除</a>
+            </td>
+        </tr>
+    </table>
+</div>

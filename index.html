@@ -1,0 +1,65 @@
+<!DOCTYPE html><html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="meApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="font-icon/css/font-awesome.min.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/angular1.2.9.min.js"></script>
+    <script src="js/me-1.0.js"></script>
+    <script src="js/Config.js"></script>
+    <script src="js/Util.js"></script>
+    <title>校园活动助手PC后台</title>
+    <script>
+        me.config({
+            container: "#main",
+            main: "",
+            path: "tpl/",
+            debug:true,
+        });
+    </script>
+</head>
+<body ng-controller="me.ctrl">
+<div ng-controller="index.ctrl">
+    <div class="head">
+        <div class="head-tittle">
+            <span>校园活动助手PC后台</span>
+        </div>
+        <div class="head-info">
+            <a class="user-name">秋秋秋</a>
+            <a class="out">退出</a>
+        </div>
+    </div>
+    <div id="menu">
+        <ul class="menu">
+            <li ng-click="changeMenu(0)" ng-class="{active:menuIndex==0}">
+                <a>管理员管理</a>
+            </li>
+            <li ng-click="changeMenu(1)" ng-class="{active:menuIndex==1}">
+                <a>用户管理</a>
+            </li>
+            <li ng-click="changeMenu(2)" ng-class="{active:menuIndex==2}">
+                <a>活动群发</a>
+            </li>
+            <li ng-click="changeMenu(3)" ng-class="{active:menuIndex==3}">
+                <a>活动管理</a>
+            </li>
+            <li ng-click="changeMenu(4)" ng-class="{active:menuIndex==4}">
+                <a>消息管理</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main"></div>
+</div>
+<script>
+    me.run('meApp', []);
+</script>
+</body>
+</html>

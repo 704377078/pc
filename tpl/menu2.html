@@ -1,0 +1,49 @@
+<div ng-controller="menu2.ctrl">
+    <h3>学生列表 / 学生详情</h3>
+    <table>
+        <tr>
+            <td>学生姓名：</td>
+            <td>
+                <input ng-model="student.name" />
+                {{student.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>学号：</td>
+            <td>
+                <input ng-model="student.id" />
+                {{student.id}}
+            </td>
+        </tr>
+        <tr>
+            <td>分数：</td>
+            <td>
+                <input ng-model="student.score" />
+                {{student.score}}
+            </td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td>
+                <input ng-model="student.age" />
+                {{student.age}}
+            </td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td>
+                <input ng-model="student.sex" />
+                {{student.sex}}
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button ng-click="save()">保存</button>
+                <button ng-click="cancel()">取消</button>
+                <button ng-click="showClass()">查看班级</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
