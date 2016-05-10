@@ -86,7 +86,7 @@ a{
 }
 
 .button{
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #4682B4;
     color: #ffffff;
     margin-left: -1px;
@@ -94,5 +94,29 @@ a{
     border-radius: 3px;
     box-sizing: border-box;
     cursor: pointer;
-
+}
+.login{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.login h3{
+    text-align: center;
+    margin: 10px;
+}
+.login_block{
+    text-align: center;
+}
+.login_block input{
+    width: 200px;
+    height: 20px;
+    padding: 2px 5px;
+    border: 1px solid #dddddd;
+    margin: 10px 0 ;
+}
+.login_button{
+    text-align: left;
+    padding-left: 40px;
 }
